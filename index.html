@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>홍승완 | Seungwan Hong</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">Graduate Researcher</p>
+      <h1>홍승완 <span>Seungwan Hong</span></h1>
+      <p class="affiliation">
+        연세대학교 <span class="todo">[학과 / 연구실명]</span>
+      </p>
+      <p class="tagline">
+        액체금속 기반 열계면소재(TIM)로 고성능 전자기기의 열 문제를 다룹니다.
+      </p>
+      <nav class="links">
+        <a href="mailto:hongpius1208@yonsei.ac.kr">Email</a>
+        <a href="#publications">Publications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="research">
+      <h2>Research</h2>
+      <div class="card">
+        <h3>Liquid Metal Thermal Interface Materials</h3>
+        <p>
+          산화물 나노입자로 안정화한 액체금속 페이스트를 이용해, 액체금속의 높은 열 성능은
+          유지하면서 압착 시 밀려나거나 새어 나가는 문제(mobility / leakage)를 재료 수준에서
+          완화하는 열계면소재를 연구하고 있습니다.
+        </p>
+        <ul class="tags">
+          <li>Liquid metal (EGaIn)</li>
+          <li>Thermal interface material</li>
+          <li>Thermal resistance</li>
+          <li>Leakage &amp; stability</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="interests">
+      <h2>Interests</h2>
+      <ul class="interest-list">
+        <li><strong>열 관리</strong> 전자기기 냉각과 열계면 설계</li>
+        <li><strong>소프트 소재</strong> 액체금속 및 복합재</li>
+        <li><strong>AI × 연구</strong> AI를 활용한 연구 관리와 자동화</li>
+        <li class="todo">[관심사 추가]</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ol class="pubs">
+        <li>
+          <span class="pub-title todo">[논문 제목]</span>
+          <span class="pub-authors"><strong>S. Hong</strong>, <span class="todo">[공저자]</span></span>
+          <span class="pub-venue todo">[저널명, 연도] — In preparation</span>
+        </li>
+      </ol>
+    </section>
+
+    <section id="guestbook">
+      <h2>Guestbook</h2>
+      <form id="guestbook-form" class="card">
+        <input name="name" placeholder="이름" maxlength="30" required />
+        <textarea name="message" placeholder="한마디 남겨주세요" maxlength="300" rows="3" required></textarea>
+        <button type="submit">남기기</button>
+      </form>
+      <p id="guestbook-status" class="status">불러오는 중…</p>
+      <ul id="guestbook-list" class="entries"></ul>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>© 2026 Seungwan Hong · Yonsei University</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script src="config.js"></script>
+  <script src="guestbook.js"></script>
+</body>
+</html>
